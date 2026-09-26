@@ -16,7 +16,7 @@ export type Product = {
   isNew: boolean;
   isBestSeller: boolean;
 };
-const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+const asset = (path: string) => `/avano-store/${path.replace(/^\//, "")}`;
 const img = (n: number) =>
   asset(`images/products/${String(n).padStart(2, "0")}.webp`);
 const cream = { name: "کرم", hex: "#e6dfd1" },
