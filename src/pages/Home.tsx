@@ -10,7 +10,7 @@ import { Link } from "react-router-dom";
 import { products } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import { SectionHeader } from "../components/Layout";
-const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, "")}`;
+const asset = (path: string) => `/avano-store/${path.replace(/^\//, "")}`;
 export default function Home() {
   return (
     <main>
